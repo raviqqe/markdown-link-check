@@ -1,0 +1,15 @@
+name: markdown-link-check
+description: Checks links in Markdown files
+inputs:
+  paths:
+    description: Paths to Markdown files
+    required: false
+    default: "**/*.md"
+outputs:
+runs:
+  using: composite
+  steps:
+    - uses: lycheeverse/lychee-action@v1
+      with:
+        args: ${{ inputs.paths }}
+        fail: true
