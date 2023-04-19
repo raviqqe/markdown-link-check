@@ -1,4 +1,4 @@
-name: markdown-link-check
+name: raviqqe/markdown-link-check
 description: Checks links in Markdown files
 inputs:
   paths:
