@@ -11,5 +11,5 @@ runs:
   steps:
     - uses: lycheeverse/lychee-action@v1
       with:
-        args: ${{ inputs.paths }}
+        args: --verbose --no-progress ${{ inputs.paths }}
         fail: true
