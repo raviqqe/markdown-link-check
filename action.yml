@@ -5,7 +5,7 @@ inputs:
     description: Paths to Markdown files
     required: false
     default: "**/*.md"
-outputs:
+outputs: {}
 runs:
   using: composite
   steps:
