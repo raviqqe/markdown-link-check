@@ -5,10 +5,9 @@ on:
       - main
   pull_request:
 jobs:
-  spell_check:
+  tag:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: streetsidesoftware/cspell-action@v5
-        with:
-          files: "**/*.md"
+      - run: git tag v1
+      - run: git push --tags
