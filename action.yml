@@ -1,5 +1,8 @@
 name: raviqqe/markdown-link-check
 description: Checks links in Markdown files
+branding:
+  icon: link
+  color: green
 inputs:
   paths:
     description: Paths to Markdown files
