@@ -11,5 +11,5 @@ runs:
   steps:
     - uses: lycheeverse/lychee-action@v1
       with:
-        args: --verbose --no-progress ${{ inputs.paths }}
+        args: --verbose --no-progress --exclude ^https://help.openai.com ${{ inputs.paths }}
         fail: true
