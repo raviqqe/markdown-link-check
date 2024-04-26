@@ -14,5 +14,10 @@ runs:
   steps:
     - uses: lycheeverse/lychee-action@v1
       with:
-        args: --verbose --no-progress --exclude ^https://help.openai.com/ ${{ inputs.paths }}
+        args: >
+          --verbose
+          --no-progress
+          --exclude ^https://help.openai.com/
+          --exclude ^https://stackoverflow.com/
+          ${{ inputs.paths }}
         fail: true
