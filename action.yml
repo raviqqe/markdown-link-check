@@ -19,5 +19,6 @@ runs:
           --no-progress
           --exclude ^https://help.openai.com/
           --exclude ^https://stackoverflow.com/
+          --exclude ^https://www.gnu.org/software/guile/
           ${{ inputs.paths }}
         fail: true
