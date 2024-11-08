@@ -5,9 +5,9 @@ branding:
   color: green
 inputs:
   paths:
-    description: Paths to Markdown files
+    description: Paths to Markdown files or directories
     required: false
-    default: "**/*.md"
+    default: .
 outputs: {}
 runs:
   using: composite
