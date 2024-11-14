@@ -18,6 +18,7 @@ runs:
           --accept 200..300,403
           --exclude ^https://help.openai.com/
           --exclude ^https://stackoverflow.com/
+          --exclude ^https://wiki.haskell.org/
           --exclude ^https://www.gnu.org/software/guile/
           --no-progress
           --verbose
