@@ -16,6 +16,7 @@ runs:
       with:
         args: >
           --accept 200..300,403
+          --exclude ^https://ghc.gitlab.haskell.org/
           --exclude ^https://help.openai.com/
           --exclude ^https://stackoverflow.com/
           --exclude ^https://wiki.haskell.org/
