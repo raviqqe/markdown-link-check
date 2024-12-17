@@ -24,4 +24,3 @@ runs:
           --no-progress
           --verbose
           ${{ inputs.paths }}
-        fail: true
