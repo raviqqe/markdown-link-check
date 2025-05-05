@@ -25,3 +25,5 @@ runs:
           --no-progress
           --verbose
           ${{ inputs.paths }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
