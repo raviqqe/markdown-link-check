@@ -8,6 +8,10 @@ inputs:
     description: Paths to Markdown files or directories
     required: false
     default: .
+  github_token:
+    description: GitHub token to access GitHub pages
+    required: false
+    default:
 outputs: {}
 runs:
   using: composite
@@ -25,4 +29,4 @@ runs:
           --no-progress
           --verbose
           ${{ inputs.paths }}
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ inputs.github_token }}
