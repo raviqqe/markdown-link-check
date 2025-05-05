@@ -19,7 +19,7 @@ runs:
     - uses: lycheeverse/lychee-action@v2
       with:
         args: >
-          --accept 200..300,403
+          --accept 200..300,403,429
           --exclude ^https://dblp.org/rec/conf/pldi/
           --exclude ^https://ghc.gitlab.haskell.org/
           --exclude ^https://help.openai.com/
